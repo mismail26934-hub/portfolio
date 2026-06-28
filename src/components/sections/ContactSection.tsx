@@ -49,19 +49,7 @@ export function ContactSection() {
   }
 
   return (
-    <section id="contact" className="desktop-section relative overflow-hidden lg:scroll-mt-[22px]">
-      <img
-        src={figmaAssets.icons.pixelAccentHorizontal}
-        alt=""
-        className="pointer-events-none absolute left-[138px] top-[92px] hidden h-[92px] w-[138px] lg:block"
-        aria-hidden
-      />
-      <img
-        src={figmaAssets.icons.pixelAccentHorizontal}
-        alt=""
-        className="pointer-events-none absolute bottom-0 right-0 hidden h-[92px] w-[138px] rotate-180 lg:block"
-        aria-hidden
-      />
+    <section id="contact" className="contact-section lg:scroll-mt-[22px]">
       <div className="desktop-container-wide">
         <div className="grid gap-10 lg:grid-cols-[421px_1fr] lg:items-start lg:gap-[122px]">
           <div className="relative mx-auto w-full max-w-[421px] lg:mx-0 lg:pt-[21px]">
@@ -74,20 +62,20 @@ export function ContactSection() {
               <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent" />
             </div>
             <div className="relative -mt-[38px] flex flex-col items-center gap-6 lg:gap-[24px]">
-              <div className="flex gap-6 lg:gap-[24px]">
+              <div className="contact-social-media">
                 {socialLinks.map((link) => (
                   <a
                     key={link.name}
                     href={link.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex size-16 items-center justify-center rounded-full border border-neutral-800 bg-black transition-colors hover:border-primary"
+                    className="contact-social-link"
                     aria-label={link.name}
                   >
                     <img
                       src={socialIconMap[link.icon]}
                       alt=""
-                      className="size-6"
+                      className="contact-social-link__icon"
                       aria-hidden
                     />
                   </a>

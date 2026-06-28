@@ -7,7 +7,7 @@ function FaqEntry({ item }: { item: FaqItem }) {
   return (
     <div className="flex flex-col gap-4">
       <div className="flex items-start gap-4">
-        <img src={figmaAssets.icons.sparkle} alt="" className="size-8 shrink-0" aria-hidden />
+        <img src={figmaAssets.icons.sparkleMuted} alt="" className="size-8 shrink-0" aria-hidden />
         <h3 className="text-xl font-bold leading-8 text-neutral-25 lg:text-2xl lg:leading-9">
           {item.question}
         </h3>

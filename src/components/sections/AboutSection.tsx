@@ -1,5 +1,6 @@
 import { figmaAssets } from '@/assets/figma/assets';
 import { aboutDescription } from '@/data';
+import { AboutPixelAccent } from '@/components/sections/AboutPixelAccent';
 
 export function AboutSection() {
   return (
@@ -7,6 +8,7 @@ export function AboutSection() {
       id='about'
       className='desktop-section relative overflow-visible lg:scroll-mt-[22px]'
     >
+      <AboutPixelAccent />
       <div className='desktop-container-wide'>
         <div className='relative mx-auto flex max-w-[1184px] flex-col items-center gap-10 text-center lg:gap-16'>
           <div className='relative w-full'>
@@ -46,9 +48,11 @@ export function AboutSection() {
             </div>
           </div>
 
-          <p className='max-w-[996px] text-base font-medium leading-7 text-neutral-400 lg:text-xl lg:leading-[34px]'>
-            {aboutDescription}
-          </p>
+          <div className='about-section__text relative mx-auto w-full max-w-[996px]'>
+            <p className='text-base font-medium leading-7 text-neutral-400 lg:text-xl lg:leading-[34px]'>
+              {aboutDescription}
+            </p>
+          </div>
         </div>
       </div>
     </section>

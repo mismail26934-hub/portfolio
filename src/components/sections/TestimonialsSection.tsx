@@ -33,7 +33,7 @@ function TestimonialCard({
           <img
             src={item.logo}
             alt={item.company}
-            className="h-7 w-auto max-w-[110px] object-contain object-right"
+            className="h-[48px] w-[114px] shrink-0 object-contain object-right"
           />
         )}
       </div>

@@ -10,6 +10,7 @@ import { PortfolioSection } from '@/components/sections/PortfolioSection'
 import { TestimonialsSection } from '@/components/sections/TestimonialsSection'
 import { FaqSection } from '@/components/sections/FaqSection'
 import { ContactSection } from '@/components/sections/ContactSection'
+import { ContactPixelAccent } from '@/components/sections/ContactPixelAccent'
 import { SuccessModal } from '@/components/ui/success-modal'
 
 export function HomePage() {
@@ -29,7 +30,10 @@ export function HomePage() {
         <PortfolioSection />
         <TestimonialsSection />
         <FaqSection />
-        <ContactSection />
+        <div className="contact-area">
+          <ContactPixelAccent />
+          <ContactSection />
+        </div>
       </main>
       <Footer />
       <SuccessModal />
