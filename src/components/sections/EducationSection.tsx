@@ -15,7 +15,7 @@ function ComparisonColumn({
   avatar: 'photo' | 'placeholder'
 }) {
   const sparkleIcon =
-    variant === 'positive' ? figmaAssets.icons.sparkle : figmaAssets.icons.sparkleMuted
+    variant === 'positive' ? figmaAssets.icons.sparkleMuted : figmaAssets.icons.sparkle
 
   return (
     <div className="flex flex-1 flex-col items-center gap-8">

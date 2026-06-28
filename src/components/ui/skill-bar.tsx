@@ -4,32 +4,40 @@ import { figmaAssets } from '@/assets/figma/assets'
 interface SkillBarItemProps {
   name: string
   percentage: number
+  figmaNodeId: string
   className?: string
 }
 
-export function SkillBarItem({ name, percentage, className }: SkillBarItemProps) {
+export function SkillBarItem({
+  name,
+  percentage,
+  figmaNodeId,
+  className,
+}: SkillBarItemProps) {
   const isFull = percentage >= 100
 
   return (
-    <div className={cn('flex items-center gap-4 lg:gap-6', className)}>
-      <div className="flex w-[467px] max-w-full flex-1 items-center">
+    <div
+      className={cn('skill-bar', className)}
+      data-name="Skill Bar"
+      data-node-id={figmaNodeId}
+    >
+      <div className="skill-bar__content" data-name="Skill Bar Content">
         <div
-          className={cn(
-            'relative flex h-10 min-w-0 items-center overflow-hidden bg-[#3a6601] px-4 lg:h-16 lg:px-6',
-            isFull ? 'rounded-2xl' : 'rounded-[20px]',
-          )}
-          style={{ width: `${percentage}%`, minWidth: '120px' }}
+          className="skill-bar__label"
+          data-name="Skill Bar Label"
+          style={{ width: `${percentage}%` }}
         >
-          <span className="diagonal-stripes absolute inset-0 opacity-60" aria-hidden />
-          <span className="relative z-10 text-sm font-semibold leading-7 text-neutral-25 lg:text-lg lg:leading-8">
-            {name}
-          </span>
+          <span className="skill-bar__stripes" aria-hidden />
+          <span className="skill-bar__name">{name}</span>
         </div>
-        {!isFull && <div className="h-px min-w-[24px] flex-1 bg-neutral-800 lg:min-w-[40px]" />}
+        {!isFull && (
+          <div className="skill-bar__connector" aria-hidden>
+            <span className="skill-bar__line" />
+          </div>
+        )}
       </div>
-      <span className="w-10 shrink-0 text-right text-base font-semibold leading-7 text-neutral-25 lg:w-12 lg:text-xl lg:leading-[34px]">
-        {percentage}%
-      </span>
+      <span className="skill-bar__percentage">{percentage}%</span>
     </div>
   )
 }

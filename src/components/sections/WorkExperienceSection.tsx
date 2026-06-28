@@ -1,6 +1,5 @@
 import { motion } from 'framer-motion'
 import { workExperiences } from '@/data'
-import { figmaAssets } from '@/assets/figma/assets'
 import { cn } from '@/lib/utils'
 import type { WorkExperience } from '@/types'
 
@@ -9,7 +8,7 @@ function CompanyLogo({ logo, company }: { logo: string; company: string }) {
     <img
       src={logo}
       alt={company}
-      className="h-8 w-auto max-w-[120px] shrink-0 object-contain object-right"
+      className="h-[48px] w-[114px] shrink-0 object-contain object-right"
     />
   )
 }
@@ -50,7 +49,7 @@ function WorkRow({
   experience: WorkExperience
   index: number
 }) {
-  const cardOnRight = index % 2 === 0
+  const cardOnRight = experience.align === 'right'
   const step = index + 1
 
   return (
@@ -111,13 +110,6 @@ export function WorkExperienceSection() {
             ))}
           </div>
         </div>
-
-        <img
-          src={figmaAssets.icons.pixelAccent}
-          alt=""
-          className="pointer-events-none absolute bottom-20 right-[92px] hidden size-[46px] rotate-180 lg:block"
-          aria-hidden
-        />
       </div>
     </section>
   )

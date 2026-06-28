@@ -14,6 +14,7 @@ export interface Service {
 export interface SkillBar {
   name: string
   percentage: number
+  figmaNodeId: string
 }
 
 export interface TechIcon {
@@ -37,6 +38,7 @@ export interface WorkExperience {
   description: string
   image: string
   logo: string
+  align: 'left' | 'right'
 }
 
 export interface PortfolioProject {

@@ -12,18 +12,18 @@ function ProjectCard({ project, index }: { project: PortfolioProject; index: num
       className="group flex flex-col gap-4"
       data-name="Portfolio Card"
     >
-      <div className="relative h-[240px] overflow-hidden rounded-[20px] lg:h-[284px]">
-        <img
-          src={project.image}
-          alt={project.title}
-          className="size-full object-cover transition-transform duration-500 group-hover:scale-105"
-          loading="lazy"
-        />
-        <div className="absolute inset-0 flex items-center justify-center bg-black/30 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-          <span className="flex size-[88px] items-center justify-center rounded-full bg-neutral-25 text-sm font-bold uppercase tracking-wide text-neutral-950">
-            Visit
-          </span>
+      <div className="relative">
+        <div className="h-[240px] overflow-hidden rounded-[20px] lg:h-[284px]">
+          <img
+            src={project.image}
+            alt={project.title}
+            className="size-full object-cover transition-transform duration-500 group-hover:scale-105"
+            loading="lazy"
+          />
         </div>
+        <span className="absolute bottom-0 left-1/2 z-10 flex size-[100px] -translate-x-1/2 translate-y-1/2 items-center justify-center rounded-full bg-neutral-25 p-2 text-lg font-bold uppercase leading-8 text-neutral-950 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+          Visit
+        </span>
       </div>
       <h3 className="text-xl font-bold leading-9 text-neutral-25 lg:text-2xl">{project.title}</h3>
       <p className="line-clamp-2 text-sm leading-7 text-neutral-400 lg:text-base lg:leading-[30px]">{project.description}</p>

@@ -4,6 +4,10 @@ import about2 from './images/about-2.png'
 import about3 from './images/about-3.png'
 import portfolio1 from './images/portfolio-1.png'
 import portfolio2 from './images/portfolio-2.png'
+import portfolio3 from './images/portfolio-3.png'
+import portfolio4 from './images/portfolio-4.png'
+import portfolio5 from './images/portfolio-5.png'
+import portfolio6 from './images/portfolio-6.png'
 import work1 from './images/work-1.png'
 import work2 from './images/work-2.png'
 import work3 from './images/work-3.png'
@@ -25,6 +29,8 @@ import sparkleMutedIcon from './icons/sparkle-muted.svg'
 import pixelAccent from './icons/pixel-accent.svg'
 import pixelAccentHorizontal from './icons/pixel-accent-horizontal.svg'
 import pixelAccentUp from './icons/pixel-accent-up.svg'
+import skillBarLine from './icons/skill-bar-line.svg'
+import skillBarStripes from './icons/skill-bar-stripes.svg'
 import profilePlaceholder from './icons/profile-placeholder.svg'
 // Source files are misnamed: arrow-left.svg points right (green), arrow-right.svg points left (gray).
 // Map keys to their actual visual direction.
@@ -33,12 +39,11 @@ import arrowRight from './icons/arrow-left.svg'
 import statusDot from './icons/status-dot.svg'
 import thinLine from './icons/thin-line.svg'
 
-// Source files trello.svg and zoom.svg are swapped (trello.svg renders Zoom, zoom.svg renders Trello).
-// Map keys to their actual brand.
+// Source files are misnamed: trello.svg = Zoom, zoom.svg = Zapier, zapier.svg = Trello.
 import upworkLogo from './logos/upwork.svg'
-import trelloLogo from './logos/zoom.svg'
 import zoomLogo from './logos/trello.svg'
-import zapierLogo from './logos/zapier.svg'
+import trelloLogo from './logos/zapier.svg'
+import zapierLogo from './logos/zoom.svg'
 
 import dribbbleIcon from './social/dribbble.svg'
 import instagramIcon from './social/instagram.svg'
@@ -47,7 +52,7 @@ import linkedinIcon from './social/linkedin.svg'
 export const figmaAssets = {
   profile: profileImg,
   about: [about1, about2, about3] as const,
-  portfolio: [portfolio1, portfolio2, work1, work2, work3, work4] as const,
+  portfolio: [portfolio1, portfolio2, portfolio3, portfolio4, portfolio5, portfolio6] as const,
   work: [work1, work2, work3, work4] as const,
   tech: {
     js: techJs,
@@ -67,6 +72,8 @@ export const figmaAssets = {
     pixelAccent,
     pixelAccentHorizontal,
     pixelAccentUp,
+    skillBarLine,
+    skillBarStripes,
     profilePlaceholder,
     arrowLeft,
     arrowRight,

@@ -1,0 +1,43 @@
+<svg preserveAspectRatio="none" width="100%" height="100%" overflow="visible" style="display: block;" viewBox="0 0 64 385" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="diagonal lines - right" opacity="0.08">
+<g clip-path="url(#clip0_0_4)">
+<mask id="path-1-inside-1_0_4" fill="white">
+<path d="M0 0H64V385H0V0Z"/>
+</mask>
+<line id="Line 82" x1="-60.35" y1="45.124" x2="135.129" y2="-46.0295" stroke="var(--stroke-0, #FDFDFD)"/>
+<line id="Line 83" x1="-60.35" y1="276.513" x2="135.129" y2="185.359" stroke="var(--stroke-0, #FDFDFD)"/>
+<line id="Line 84" x1="-60.35" y1="160.818" x2="135.129" y2="69.6649" stroke="var(--stroke-0, #FDFDFD)"/>
+<line id="Line 85" x1="-60.3501" y1="392.207" x2="135.129" y2="301.053" stroke="var(--stroke-0, #FDFDFD)"/>
+<line id="Line 86" x1="-60.3501" y1="61.6514" x2="135.129" y2="-29.5021" stroke="var(--stroke-0, #FDFDFD)"/>
+<line id="Line 87" x1="-60.3501" y1="293.04" x2="135.129" y2="201.887" stroke="var(--stroke-0, #FDFDFD)"/>
+<line id="Line 88" x1="-60.3501" y1="177.346" x2="135.129" y2="86.1924" stroke="var(--stroke-0, #FDFDFD)"/>
+<line id="Line 89" x1="-60.35" y1="408.734" x2="135.129" y2="317.581" stroke="var(--stroke-0, #FDFDFD)"/>
+<line id="Line 90" x1="-60.35" y1="78.1787" x2="135.129" y2="-12.9748" stroke="var(--stroke-0, #FDFDFD)"/>
+<line id="Line 91" x1="-60.35" y1="309.568" x2="135.129" y2="218.415" stroke="var(--stroke-0, #FDFDFD)"/>
+<line id="Line 92" x1="-60.35" y1="193.874" x2="135.129" y2="102.721" stroke="var(--stroke-0, #FDFDFD)"/>
+<line id="Line 93" x1="-60.35" y1="425.263" x2="135.129" y2="334.109" stroke="var(--stroke-0, #FDFDFD)"/>
+<line id="Line 94" x1="-60.3501" y1="94.7069" x2="135.129" y2="3.55343" stroke="var(--stroke-0, #FDFDFD)"/>
+<line id="Line 95" x1="-60.3501" y1="326.096" x2="135.129" y2="234.942" stroke="var(--stroke-0, #FDFDFD)"/>
+<line id="Line 96" x1="-60.3501" y1="210.401" x2="135.129" y2="119.248" stroke="var(--stroke-0, #FDFDFD)"/>
+<line id="Line 97" x1="-60.3501" y1="441.79" x2="135.129" y2="350.637" stroke="var(--stroke-0, #FDFDFD)"/>
+<line id="Line 98" x1="-60.35" y1="111.234" x2="135.129" y2="20.0809" stroke="var(--stroke-0, #FDFDFD)"/>
+<line id="Line 99" x1="-60.35" y1="342.624" x2="135.129" y2="251.471" stroke="var(--stroke-0, #FDFDFD)"/>
+<line id="Line 100" x1="-60.35" y1="226.929" x2="135.129" y2="135.775" stroke="var(--stroke-0, #FDFDFD)"/>
+<line id="Line 101" x1="-60.35" y1="458.318" x2="135.129" y2="367.165" stroke="var(--stroke-0, #FDFDFD)"/>
+<line id="Line 102" x1="-60.3501" y1="127.763" x2="135.129" y2="36.609" stroke="var(--stroke-0, #FDFDFD)"/>
+<line id="Line 103" x1="-60.3501" y1="359.151" x2="135.129" y2="267.998" stroke="var(--stroke-0, #FDFDFD)"/>
+<line id="Line 104" x1="-60.3501" y1="243.457" x2="135.129" y2="152.303" stroke="var(--stroke-0, #FDFDFD)"/>
+<line id="Line 105" x1="-60.3501" y1="474.846" x2="135.129" y2="383.692" stroke="var(--stroke-0, #FDFDFD)"/>
+<line id="Line 106" x1="-60.35" y1="144.29" x2="135.129" y2="53.1365" stroke="var(--stroke-0, #FDFDFD)"/>
+<line id="Line 107" x1="-60.35" y1="375.679" x2="135.129" y2="284.525" stroke="var(--stroke-0, #FDFDFD)"/>
+<line id="Line 108" x1="-60.35" y1="259.984" x2="135.129" y2="168.831" stroke="var(--stroke-0, #FDFDFD)"/>
+<line id="Line 109" x1="-60.35" y1="491.374" x2="135.129" y2="400.221" stroke="var(--stroke-0, #FDFDFD)"/>
+</g>
+<path d="M0 0V1H64V0V-1H0V0ZM64 385V384H0V385V386H64V385Z" fill="var(--stroke-0, #FDFDFD)" mask="url(#path-1-inside-1_0_4)"/>
+</g>
+<defs>
+<clipPath id="clip0_0_4">
+<path d="M0 0H64V385H0V0Z" fill="white"/>
+</clipPath>
+</defs>
+</svg>

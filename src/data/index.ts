@@ -59,12 +59,12 @@ export const aboutDescription =
   'I love turning designs into interactive, high-performance websites. With a keen eye for detail and a deep understanding of frontend technologies, I create smooth and visually appealing user experiences.'
 
 export const skillBars: SkillBar[] = [
-  { name: 'React JS', percentage: 50 },
-  { name: 'HTML', percentage: 80 },
-  { name: 'Tailwind CSS', percentage: 90 },
-  { name: 'HTML', percentage: 100 },
-  { name: 'Docker', percentage: 70 },
-  { name: 'Javascript', percentage: 90 },
+  { name: 'React JS', percentage: 50, figmaNodeId: '20416:976' },
+  { name: 'HTML', percentage: 80, figmaNodeId: '20416:977' },
+  { name: 'Tailwind CSS', percentage: 90, figmaNodeId: '20416:983' },
+  { name: 'HTML', percentage: 100, figmaNodeId: '20416:989' },
+  { name: 'Docker', percentage: 70, figmaNodeId: '20416:995' },
+  { name: 'Javascript', percentage: 90, figmaNodeId: '20416:1058' },
 ]
 
 export const techIcons: TechIcon[] = [
@@ -108,6 +108,7 @@ export const workExperiences: WorkExperience[] = [
     description: workDescription,
     image: figmaAssets.work[0],
     logo: figmaAssets.logos.upwork,
+    align: 'right',
   },
   {
     id: '2',
@@ -117,6 +118,7 @@ export const workExperiences: WorkExperience[] = [
     description: workDescription,
     image: figmaAssets.work[1],
     logo: figmaAssets.logos.trello,
+    align: 'left',
   },
   {
     id: '3',
@@ -126,6 +128,7 @@ export const workExperiences: WorkExperience[] = [
     description: workDescription,
     image: figmaAssets.work[2],
     logo: figmaAssets.logos.zoom,
+    align: 'right',
   },
   {
     id: '4',
@@ -135,6 +138,7 @@ export const workExperiences: WorkExperience[] = [
     description: workDescription,
     image: figmaAssets.work[3],
     logo: figmaAssets.logos.zapier,
+    align: 'left',
   },
 ]
 
@@ -147,31 +151,31 @@ export const portfolioProjects: PortfolioProject[] = [
   },
   {
     id: '2',
-    title: 'E-Commerce Platform',
+    title: 'Dashboard SaaS Task Management',
     description: 'Lorem ipsum dolor sit amet consectetur. Aenean sed commodo aenean nunc lobortis.',
     image: figmaAssets.portfolio[1],
   },
   {
     id: '3',
-    title: 'Mobile Banking App',
+    title: 'Dashboard SaaS Task Management',
     description: 'Lorem ipsum dolor sit amet consectetur. Aenean sed commodo aenean nunc lobortis.',
     image: figmaAssets.portfolio[2],
   },
   {
     id: '4',
-    title: 'Portfolio Website',
+    title: 'Dashboard SaaS Task Management',
     description: 'Lorem ipsum dolor sit amet consectetur. Aenean sed commodo aenean nunc lobortis.',
     image: figmaAssets.portfolio[3],
   },
   {
     id: '5',
-    title: 'SaaS Landing Page',
+    title: 'Dashboard SaaS Task Management',
     description: 'Lorem ipsum dolor sit amet consectetur. Aenean sed commodo aenean nunc lobortis.',
     image: figmaAssets.portfolio[4],
   },
   {
     id: '6',
-    title: 'Restaurant Booking',
+    title: 'Dashboard SaaS Task Management',
     description: 'Lorem ipsum dolor sit amet consectetur. Aenean sed commodo aenean nunc lobortis.',
     image: figmaAssets.portfolio[5],
   },

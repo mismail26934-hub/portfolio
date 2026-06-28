@@ -191,6 +191,111 @@
     @apply text-base leading-7 text-neutral-400 lg:text-xl lg:leading-[34px];
   }
 
+  .skill-bar {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .skill-bar__content {
+    display: flex;
+    min-width: 0;
+    flex: 1;
+    align-items: center;
+  }
+
+  .skill-bar__label {
+    position: relative;
+    flex: 0 0 auto;
+    display: flex;
+    height: 40px;
+    min-width: 0;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+    background-color: var(--color-primary-300);
+    padding: 6px 16px;
+  }
+
+  .skill-bar__connector {
+    flex: 1 1 0;
+    min-width: 0;
+    align-self: center;
+  }
+
+  .skill-bar__line {
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: var(--color-neutral-800);
+  }
+
+  .skill-bar__name {
+    position: relative;
+    z-index: 1;
+    font-family: var(--font-body);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 28px;
+    color: var(--color-neutral-25);
+    white-space: nowrap;
+  }
+
+  .skill-bar__stripes {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background-image: repeating-linear-gradient(
+      45deg,
+      transparent 0,
+      transparent 15px,
+      rgba(253, 253, 253, 0.08) 15px,
+      rgba(253, 253, 253, 0.08) 16px
+    );
+  }
+
+  .skill-bar__percentage {
+    flex-shrink: 0;
+    width: 40px;
+    text-align: right;
+    font-family: var(--font-body);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 28px;
+    color: var(--color-neutral-25);
+    white-space: nowrap;
+  }
+
+  @media (min-width: 1024px) {
+    .skill-bar {
+      width: 602px;
+      max-width: 100%;
+      gap: 24px;
+    }
+
+    .skill-bar__content {
+      width: 467px;
+      flex: none;
+    }
+
+    .skill-bar__label {
+      height: 64px;
+      padding: 8px 24px;
+    }
+
+    .skill-bar__name {
+      font-size: 18px;
+      line-height: 32px;
+    }
+
+    .skill-bar__percentage {
+      width: auto;
+      font-size: 20px;
+      line-height: 34px;
+    }
+  }
+
   .hero-greeting {
     @apply text-base font-medium leading-[34px] text-neutral-25 lg:text-xl;
   }
